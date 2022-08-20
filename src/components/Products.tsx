@@ -35,7 +35,7 @@ const Products = () => {
       <div className={styles.productGrid}>
         {products.map((product) => {
           return (
-            <li className={styles.productCard} key={product.id}>
+            <li className={styles.productCard} key={Math.random() + product.id}>
               <h2>{product.name}</h2>
               <div>{product.description}</div>
               <span>{product.price}</span>
