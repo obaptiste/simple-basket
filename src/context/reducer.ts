@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ProductType, ShoppingCartProducts } from "../types/types";
 
 type ActionMap<M extends { [index: string]: any }> = {
   [Key in keyof M]: M[Key] extends undefined
@@ -18,22 +18,7 @@ export enum Types {
   Add = "ADD_PRODUCT",
 }
 
-export type ProductType = {
-  id: number;
-  name: string;
-  price: number;
-  image?: string;
-  description?: string;
-  quantity?: number;
-  category?: string;
-};
 
-export type ShoppingCartProducts = {
-  [x: string]: ReactNode;
-  id: number;
-  name: string;
-  price: number;
-}[];
 
 
 export type ShoppingCartProduct =

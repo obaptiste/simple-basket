@@ -1,6 +1,11 @@
 import React, { FC, useContext } from "react";
 import { AppContext } from "../context/context";
-import { ProductType, Types } from "../context/reducer";
+import { Types } from "../context/reducer";
+import { ProductType } from "../types/types";
+import Card from '@mui/material/Card';
+
+import Button from '@mui/material/Button';
+
 import styles from "../styles/Products.module.scss";
 
 interface productButtonProps {
@@ -12,7 +17,7 @@ export const ProductButton = (product: productButtonProps) => {
 
   return (
     <>
-      <button
+       <Button variant="outlined"
         onClick={() => {
           dispatch({
             type: Types.Add,
@@ -22,7 +27,7 @@ export const ProductButton = (product: productButtonProps) => {
         }}
       >
         click
-      </button>
+      </Button>
     </>
   );
 };
@@ -36,10 +41,13 @@ const Products = () => {
         {products.map((product) => {
           return (
             <li className={styles.productCard} key={Math.random() + product.id}>
+              <div style={{backgroundImage:`url('/public/images/${product.image}')`}}>
+
               <h2>{product.name}</h2>
               <div>{product.description}</div>
               <span>{product.price}</span>
               <ProductButton product={product} />
+              </div>
             </li>
           );
         })}

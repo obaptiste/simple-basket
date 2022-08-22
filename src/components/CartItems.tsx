@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
 import { AppContext } from "../context/context";
-import { ProductType } from "../context/reducer";
+import { ProductType } from "../types/types";
 
 export const CartItems: FC = (product) => {
   const { state } = useContext(AppContext);
