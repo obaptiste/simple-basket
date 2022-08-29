@@ -1,0 +1,16 @@
+.cartItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    justify-items: center;
+}
+
+.cartItems {
+    container-type: inline-size;
+}
+
+@container(min-width:500px) {
+    .ProductCard {
+        border: 1px solid green;
+    }
+}
