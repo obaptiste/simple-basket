@@ -18,12 +18,13 @@ const initialState = {
     "image": "pic1.jpg",
     "price": 5.0,
     "category": "basic",
-    "quantity": 5
+    "quantity": 5,
+    "description": "FaceMaskOne - the cheapest piece of shit going... honestly, you may as well be sucking a lollypop while doing the makarena for all the safety this provides.."
   },
   {
     "id": 202,
     "name": "FaceMaskOne",
-    "image": "/pic2.jpg",
+    "image": "pic2.jpg",
     "price": 6.0,
     "category": "basic",
     "quantity": 5
@@ -31,7 +32,7 @@ const initialState = {
   {
     "id": 203,
     "name": "FaceMaskOne",
-    "image": "/pic3.jpg",
+    "image": "pic3.jpg",
     "price": 11.0,
     "category": "full" ,
     "quantity": 5
@@ -39,7 +40,7 @@ const initialState = {
   {
     "id": 204,
      "name": "FaceMaskOne",
-     "image": "/pic4.jpg",
+     "image": "pic4.jpg",
      "price": 120.0,
      "category": "full" ,
      "quantity": 5
@@ -47,7 +48,7 @@ const initialState = {
   {
     "id": 205,
     "name": "FaceMaskOne",
-    "image": "/pic5.jpg",
+    "image": "pic5.jpg",
     "price": 8.0,
     "category": "half" ,
     "quantity": 5
