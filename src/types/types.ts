@@ -20,6 +20,7 @@ export type ProductType = {
     [x: string]: ReactNode;
     id: number;
     name: string;
+    description?: string;
     price: number;
   }[];
   

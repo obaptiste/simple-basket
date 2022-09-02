@@ -1,16 +1,12 @@
 .productGrid {
-  display: grid;
-  width: 100%;
 
-  grid-template-areas:
-    "left middle right"
-    "left middle right";
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
-  column-gap: 20px;
+  display: flex;
+  width: 100%;
   justify-items: center;
-  justify-items: center;
-  row-gap: 55px;
-  grid-auto-rows: minmax(160px, 1fr);
+  justify-content: space-around;
+  flex-flow: row wrap;
+  gap: 15%;
+  height: 75vh;
 
   LI {
     list-style-type: none;

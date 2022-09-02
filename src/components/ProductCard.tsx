@@ -4,7 +4,8 @@ import { ProductType } from "../types/types";
 import { ProductButton } from "./ProductButton";
 
 interface ProductCardProps {
-product: ProductType
+  product: ProductType;
+  className?: string;
 }
 
 export const ProductCard = (props: ProductCardProps) => {
@@ -15,9 +16,11 @@ export const ProductCard = (props: ProductCardProps) => {
       style={{ backgroundImage: `url('../images/${image}')` }}
     >
       <h2>{name}</h2>
-      <div className={styles.description}><p>{description}</p></div>
+      <div className={styles.description}>
+        <p>{description}</p>
+      </div>
       <span>£{price}</span>
-      <ProductButton product={{id, name, price}} />
+      <ProductButton product={{ id, name, price }} />
     </div>
   );
 };
