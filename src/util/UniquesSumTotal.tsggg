@@ -1,0 +1,16 @@
+import { useState, useContext } from "react";
+import { AppContext } from "../context/context";
+import { ShoppingCartProduct } from "../context/reducer";
+
+export interface cartSumProp {
+    cartItem: ShoppingCartProduct
+}
+
+const CartCalc: FC = ([cartItem]) => {
+    const { state } = useContext(AppContext);
+    const { shoppingCartProducts } = state;
+
+    const uniqueProduct = [...new Set(shoppingCartProducts)]
+    
+    console.log(uniqueProduct);
+}

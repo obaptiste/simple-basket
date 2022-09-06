@@ -11,3 +11,4 @@ const CartPage: React.FC = (): JSX.Element => {
 };
 
 export default CartPage;
+
