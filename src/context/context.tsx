@@ -27,7 +27,9 @@ const initialState = {
     "image": "pic2.jpg",
     "price": 6.0,
     "category": "basic",
-    "quantity": 5
+    "quantity": 5,
+    "description": "FaceMaskOne - the cheapest piece of... honestly, you may as well be sucking a lollypop while doing the makarena for all the safety this provides.."
+
   },
   {
     "id": 203,
@@ -35,7 +37,9 @@ const initialState = {
     "image": "pic3.jpg",
     "price": 11.0,
     "category": "full" ,
-    "quantity": 5
+    "quantity": 5,
+    "description": "FaceMaskOne - the cheapest piece of... honestly, you may as well be sucking a lollypop while doing the makarena for all the safety this provides.."
+
   },
   {
     "id": 204,
@@ -43,7 +47,9 @@ const initialState = {
      "image": "pic4.jpg",
      "price": 120.0,
      "category": "full" ,
-     "quantity": 5
+     "quantity": 5,
+     "description": "FaceMaskOne - the cheapest piece of... honestly, you may as well be sucking a lollypop while doing the makarena for all the safety this provides.."
+
     },
   {
     "id": 205,
@@ -51,7 +57,9 @@ const initialState = {
     "image": "pic5.jpg",
     "price": 8.0,
     "category": "half" ,
-    "quantity": 5
+    "quantity": 5,
+    "description": "FaceMaskOne - the cheapest piece of... honestly, you may as well be sucking a lollypop while doing the makarena for all the safety this provides.."
+
   }],
   shoppingCart: 0,
   shoppingCartProducts: [] as unknown as ShoppingCartProducts,
